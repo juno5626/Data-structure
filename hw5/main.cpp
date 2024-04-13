@@ -1,5 +1,5 @@
 #include <iostream>
-#define SIZE 20 // Maximum size of the stack
+#define SIZE 20
 using namespace std;
 
 class Stack {
@@ -8,7 +8,9 @@ private:
     char sta[SIZE]; 
 
 public:
-    Stack() : top(0) {}
+    Stack(){
+        top = 0;
+    }
     void push(char a) {
         sta[top++] = a;
     }
