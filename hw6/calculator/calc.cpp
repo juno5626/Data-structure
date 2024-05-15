@@ -14,11 +14,10 @@ int Calculator::getPrecedence(char op) {
 }
 
 float Calculator::calculateExpression(const string& expression) {
-    Stack<float> operands; // 피연산자 스택
-    Stack<char> operators; // 연산자 스택
+    Stack<float> operands;
+    Stack<char> operators;
 
-    stringstream ss(expression); // stringstream을 사용하여 문자열 파싱
-
+    stringstream ss(expression);
     char token;
     while (ss >> token) {
         if (isdigit(token) || (token == '-' && isdigit(ss.peek()))) {
@@ -133,5 +132,5 @@ float Calculator::calculateExpression(const string& expression) {
 }
 
 float Calculator::evaluate() {
-    return calculateExpression(infix); // 중위 표기식을 계산
+    return calculateExpression(str_EX); // 중위 표기식을 계산
 }

@@ -9,8 +9,7 @@ int main() {
     string str;
 
     cout << "Input infix expression: ";
-    getline(cin, str); // 중위 표기식을 읽음
-
+    getline(cin, str); 
     Calculator calc(str);
 
     cout << "Result = " << calc.evaluate() << endl;
