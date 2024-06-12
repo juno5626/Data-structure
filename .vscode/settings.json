@@ -65,7 +65,8 @@
         "unordered_map": "cpp",
         "variant": "cpp",
         "vector": "cpp",
-        "algorithm": "cpp"
+        "algorithm": "cpp",
+        "filesystem": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }
